@@ -1,4 +1,5 @@
 /* for the links */
+/*
 a:link {
 	color: gray;
 	background-color: white;
@@ -10,17 +11,28 @@ a:visited {
 	background-color: transparent;
 	text-decoration: none;
 }
+*/
 
 a:hover {
-	color: gray;
-	background-color: transparent;
+	color: inherit;
+    cursor: pointer;
 	text-decoration: none;	
 }
 
+/*
 a:active {
 	color: gray;
 	background-color: transparent;
 	text-decoration: none;	
+}*/
+
+.btn {
+    background-color: lightslategray;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 8px 30px;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .userOption {
@@ -49,26 +61,26 @@ h1 {
 }
 
 h3 {
-  font-family: 'Helvetica Neue',Sans-serif;
+  font-family: 'Helvetica Neue',Sans-serif, monospace;
   font-weight: bold;
   text-align: left;
 }
 
 h3 {
-  font-family: 'Helvetica Neue',Sans-serif;
+  font-family: 'Helvetica Neue',Sans-serif, monospace;
   font-weight: bold;
   text-align: left;
 }
 
 h4 {
-  font-family: 'Helvetica Neue',Sans-serif;
+  font-family: 'Helvetica Neue',Sans-serif, monospace;
   font-weight: normal;
   text-align: left;
 }
 
 header {
   /*background-color: #f2f2f2;*/
-  font-family: 'Helvetica Neue',Sans-serif;
+  font-family: 'Helvetica Neue',Sans-serif, monospace;
   font-size: 0.9em;
   text-align: right;
 }
@@ -79,13 +91,13 @@ main {
 
 footer {
   background: pink;
-  font-family: 'Helvetica Neue',Sans-serif;
+  font-family: 'Helvetica Neue',Sans-serif, monospace;
   font-size: 0.75em;
   text-align: center;
 }
 
 .path {
-  font-family: 'Helvetica Neue',Sans-serif;
+  font-family: 'Helvetica Neue',Sans-serif, monospace;
   font-size: .9em; 	
   text-decoration-color: lightgray;
 }
@@ -109,7 +121,7 @@ table {
 }
 
 #pagetitle {
-  font-family: 'Helvetica Neue',Sans-serif;
+  font-family: 'Helvetica Neue',Sans-serif, monospace;
   font-size: 1em;
   text-align: center;  
 }
