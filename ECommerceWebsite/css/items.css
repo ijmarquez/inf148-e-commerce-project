@@ -40,4 +40,56 @@ h1 {
     text-align: center;
 }
 
+#imgZoom {
+    width: 250px;
+    height: 300px;
+}
+
+.boxList {
+    display: block;
+    list-style: none;
+
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+
+.boxList li {
+    float: left;
+    display: block;
+    margin: 0 12px 0 0;
+}
+.sizeSelection{
+    border: 1px solid;
+    padding: 2px;
+}
+
+.itemImg {
+    width: 40px;
+    height: 40px;
+    border: 1px solid;
+    padding: 2px;
+}
+.li.itemList{
+    display: list-item;
+}
+
+.itemCategories li {
+    display: inline-block;
+}
+
+#overlay {
+    border:1px solid black;
+    width:250px;
+    height: 300px;
+    /*background-image: url("../images/item1/tshirtWhite.jpg");*/
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+
+
+
 
