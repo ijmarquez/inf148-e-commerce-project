@@ -7,32 +7,74 @@
 </head>
 <body>
     <p id="itemPicked">Item Purchase: </p>
-    <p id="sizePicked" style ="display: none">
+    <p id="sizePicked">
     <p id="costPicked">cost: </p>
     <form>
-        Quantity: <br>
+        Quantity:
         <input type="number" name="quantity"> <br>
-        First Name: <br>
-        <input type="text" name="firstname"> <br>
-        Last Name: <br>
-        <input type="text" name="lastName"> <br>
-        Email Address: <br>
-        <input type="email" name="lastName"> <br>
-        Phone Number: <br>
-        <input type="tel" name="lastName"> <br>
-        Credit Card: <br>
-        <input type="number" name="creditCard"> <br>
-        Billing Address: <br>
-        <input type="text" name="billAddress"> <br>
-        Billing Address: <br>
-        <input type="text" name="billAddress"> <br>
-        Shipping Address: <br>
-        <input type="text" name="shipAddress"> <br>
-        Delivery Option: <br>
-        <input type ="radio" name="devliveryMethod" value="Overnight" checked>Overnight<br>
-        <input type ="radio" name="devliveryMethod" value="2Days" checked>2 Days<br>
-        <input type ="radio" name="devliveryMethod" value="7_10Days" checked>7-10 days<br>
+        <table>
+            <h2>Personal Information</h2>
+            <tr>
+                <td>First Name:</td>
+                <td><input type="text" name="firstname"></td>
+            </tr>
+            <tr>
+                <td>Last Name:</td>
+                <td><input type="text" name="lastName"></td>
+            </tr>
+            <tr>
+                <td> Email Address: </td>
+                <td> <input type="email" name="lastName"> </td>
+            </tr>
+            <tr>
+                <td> Phone Number: </td>
+                <td> <input type="tel" name="lastName"> </td>
+            </tr>
+        </table>
+
+
+        <table>
+            <h2>Billing Information</h2>
+            <tr>
+                <td> Credit Card:</td>
+                <td><input type="number" name="creditCard"> </td>
+            </tr>
+            <tr>
+                <td>Billing Address: </td>
+                <td> <input type="text" name="billAddress"> </td>
+            </tr>
+        </table>
+
+        <table>
+            <h2> Shipping Information</h2>
+            <tr>
+                <td>Shipping Address: </td>
+                <td> <input type="text" name="shipAddress"></td>
+            </tr>
+            <tr>
+                <td>Delivery Option: </td>
+            </tr>
+            <tr>
+                <td><input type ="radio" name="devliveryMethod" value="Overnight" style="text-indent: 5px" checked>Overnight</td>
+            </tr>
+            <tr>
+                <td><input type ="radio" name="devliveryMethod" value="2Days" checked>2 Days</td>
+            </tr>
+            <tr>
+                <td> <input type ="radio" name="devliveryMethod" value="7_10Days" checked>7-10 days </td>
+            </tr>
+        </table>
+
         <input type="submit" value="Submit">
+
+
+
+
+
+
+
+
+
     </form>
 </body>
 </html>

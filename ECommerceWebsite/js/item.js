@@ -2,7 +2,6 @@
  * Created by Calvin on 4/14/2017.
  */
 var idPicked = document.getElementById("xxs");
-var img;
 
 function zoomIn() {
     var element = document.getElementById("overlay");
@@ -55,13 +54,15 @@ function itemSelect(itemClick) {
     }
 }
 
-function buyItem(item) {
-        var itemPicked = document.getElementById("itemPicked");
-        // var img = IEWIN ? Image() : document.createElement('img');
-        // img.src = item.get
-        // itemPicked.innerHTML =
-        var sizePicked = document.getElementById("sizePicked");
-        var size = idPicked.id;
-        sizePicked.style.display = "block";
-        sizePicked.innerHTML = "Size: " + size;
+function buyItem() {
+    window.location.href = "../../buyItem.html";
+    // var itemPicked = document.getElementById("itemPicked");
+    // var img = IEWIN ? Image() : document.createElement('img');
+    // img.src = item.get
+    // itemPicked.innerHTML =
+    var sizePicked = document.getElementById("sizePicked");
+    var size = idPicked.id;
+    sizePicked.style.display = "block";
+    sizePicked.innerHTML = "Size: " + size;
+
 }
