@@ -2,21 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <script type="text/javascript" src="../../js/item.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/buyItem.css">
+    <script type="text/javascript" src="js/buyItem.js"></script>
     <title>Buy item</title>
 </head>
-<body>
+<body onload="getValues()">
     <p id="itemPicked">Item Purchase: </p>
-    <p id="sizePicked">
-    <p id="costPicked">cost: </p>
-    <form>
+    <img id="showImg">
+    <p id="sizePicked"> </p>
+    <p id="costPicked"> </p>
+    <form action="" name="userInfo" onsubmit="checkForm()">
         Quantity:
         <input type="number" name="quantity"> <br>
         <table>
             <h2>Personal Information</h2>
             <tr>
                 <td>First Name:</td>
-                <td><input type="text" name="firstname"></td>
+                <td><input type="text" name="firstName"></td>
             </tr>
             <tr>
                 <td>Last Name:</td>
@@ -24,11 +26,11 @@
             </tr>
             <tr>
                 <td> Email Address: </td>
-                <td> <input type="email" name="lastName"> </td>
+                <td> <input type="email" name="emailAddress"> </td>
             </tr>
             <tr>
                 <td> Phone Number: </td>
-                <td> <input type="tel" name="lastName"> </td>
+                <td> <input type="tel" name="phoneNumber"> </td>
             </tr>
         </table>
 
@@ -40,8 +42,24 @@
                 <td><input type="number" name="creditCard"> </td>
             </tr>
             <tr>
+                <td> Expiration Date:</td>
+                <td><input type="text" name="ccExpire"> </td>
+            </tr>
+            <tr>
                 <td>Billing Address: </td>
                 <td> <input type="text" name="billAddress"> </td>
+            </tr>
+            <tr>
+                <td>City: </td>
+                <td> <input type="text" name="billCity"> </td>
+            </tr>
+            <tr>
+                <td>State: </td>
+                <td> <input type="text" name="billState"> </td>
+            </tr>
+            <tr>
+                <td>Zip Code: </td>
+                <td> <input type="number" name="billZipCode"> </td>
             </tr>
         </table>
 
@@ -52,29 +70,33 @@
                 <td> <input type="text" name="shipAddress"></td>
             </tr>
             <tr>
+                <td>City: </td>
+                <td> <input type="text" name="shipCity"> </td>
+            </tr>
+            <tr>
+                <td>State: </td>
+                <td> <input type="text" name="shipState"> </td>
+            </tr>
+            <tr>
+                <td>Zip Code: </td>
+                <td> <input type="number" name="shipZipCode"> </td>
+            </tr>
+            <tr>
                 <td>Delivery Option: </td>
             </tr>
             <tr>
                 <td><input type ="radio" name="devliveryMethod" value="Overnight" style="text-indent: 5px" checked>Overnight</td>
             </tr>
             <tr>
-                <td><input type ="radio" name="devliveryMethod" value="2Days" checked>2 Days</td>
+                <td><input type ="radio" name="devliveryMethod" value="2Days">2 Days</td>
             </tr>
             <tr>
-                <td> <input type ="radio" name="devliveryMethod" value="7_10Days" checked>7-10 days </td>
+                <td> <input type ="radio" name="devliveryMethod" value="7_10Days">7-10 days </td>
             </tr>
         </table>
 
-        <input type="submit" value="Submit">
-
-
-
-
-
-
-
-
-
+        <br>
+        <input type="submit" value="Submit Order">
     </form>
 </body>
 </html>

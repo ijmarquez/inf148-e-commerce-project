@@ -1,7 +1,7 @@
 /**
  * Created by Calvin on 4/14/2017.
  */
-var idPicked = document.getElementById("xxs");
+var idPicked;
 
 function zoomIn() {
     var element = document.getElementById("overlay");
@@ -34,7 +34,7 @@ function sizeSelect(sizeClick) {
     idPicked = id;
     for(i = 0; i < 7;++i)
     {
-        if(sizeID[i] == id)
+        if(sizeID[i] == idPicked)
             id.style.borderColor="red";
         else
             sizeID[i].style.borderColor="black";
@@ -54,15 +54,14 @@ function itemSelect(itemClick) {
     }
 }
 
-function buyItem() {
-    window.location.href = "../../buyItem.html";
-    // var itemPicked = document.getElementById("itemPicked");
-    // var img = IEWIN ? Image() : document.createElement('img');
-    // img.src = item.get
-    // itemPicked.innerHTML =
-    var sizePicked = document.getElementById("sizePicked");
-    var size = idPicked.id;
-    sizePicked.style.display = "block";
-    sizePicked.innerHTML = "Size: " + size;
+function buyItem(img) {
+    if(idPicked==undefined)
+        alert("Pick a shirt size");
+    else {
+        localStorage.setItem("size", idPicked.title);
+        localStorage.setItem("img", img);
+        localStorage.setItem("cost", "$10");
+        window.location.href = "../../buyItem.html";
+    }
 
 }
