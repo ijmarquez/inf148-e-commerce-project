@@ -1,5 +1,6 @@
 /* for the links */
-a:link {
+
+/*a:link {
     color: gray;
     background-color: white;
     text-decoration: none;
@@ -30,7 +31,6 @@ a:active {
 }
 
 header {
-    /*background-color: #f2f2f2;*/
     font-family: 'Helvetica Neue',Sans-serif;
     font-size: 0.9em;
     text-align: right;
@@ -38,7 +38,7 @@ header {
 
 h1 {
     text-align: center;
-}
+}*/
 
 #imgZoom {
     width: 250px;
