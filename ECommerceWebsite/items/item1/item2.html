@@ -5,66 +5,79 @@
     <link rel="stylesheet" type="text/css" href="../../css/items.css">
     <!--<script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>-->
     <script type="text/javascript" src="../../js/item.js"></script>
-    <title>Item 2</title>
+    <title>Plain Black T-shirt</title>
 </head>
 
-<hr>
+<!--<hr>-->
 <header>
-    <a class="userOption">SignIn</a>
-    <a class="userOption">My Orders</a>
-    <a class="userOption">Shipping/Returns</a>
+    <a class="userOption" href="../../items_list.html"> Home </a>
+    <!--<a class="userOption">SignIn</a>-->
+    <!--<a class="userOption">My Orders</a>-->
+    <!--<a class="userOption">Shipping/Returns</a>-->
 </header>
 
 <body>
     <hr>
-    <h1>Generic Clothing</h1>
+    <h1>Clothing Couture</h1>
     <hr>
     <!--set main item here-->
-    <img id="imgZoom" onmousemove="zoomIn(event)" onmouseout="zoomOut()"
-         src="../../images/item1/tshirtBlack.jpg">
-    <div id="overlay" onmousemove="zoomIn(event)"
-         style="background-image: url('../../images/item1/tshirtBlack.jpg')"></div>
+    <div class="pageContainer">
+        <div class="itemName">
+            <h2> Black Shirt</h2>
+        </div>
+        <div class="productContainer">
+            <img id="imgZoom" onmousemove="zoomIn(event)" onmouseout="zoomOut()"
+                 src="../../images/item1/tshirtBlack.jpg" alt="picture of a shirt">
+            <div id="overlay" onmousemove="zoomIn(event)"
+                 style="background-image: url('../../images/item1/tshirtBlack.jpg')"></div>
 
-    <ul class="itemCategories">
-        <li class="productList">
-            <div class="productListChoice">
-                <h3>Choose a design:</h3>
-            </div>
+            <ul class="itemCategories">
+                <li class="productList">
+                    <div class="productListChoice">
+                        <h3>Choose a design:</h3>
+                    </div>
 
-            <div class="list">
-                <ul class="boxList">
-                    <li class="itemList">
-                        <!--<a href="../images/item1/tshirtWhite.jpg"-->
-                        <a href="item1.html">
-                        <img class="itemImg" id="whiteShirt"
-                             src="http://www.clipartkid.com/images/552/customer-feedback-for-this-store-17-past-orders-3-customer-ratings-kZzD4r-clipart.jpg">
-                        </a>
-                    </li>
-                    <li class="itemList">
-                        <!--<a href="../images/item1/tshirtWhite.jpg"-->
-                        <a href="item2.html">
-                        <img class="itemImg" id="blackShirt" style="border-color: red" src="../../images/item1/tshirtBlack.jpg">
-                        </a>
-                    </li>
-                    <li class="itemList">
-                        <!--<a href="../images/item1/tshirtWhite.jpg"-->
-                        <img class="itemImg" id="blueShirt"src="../../images/item1/tshirtBlue.jpg">
-                    </li>
-                    <li class="itemList">
-                        <!--<a href="../images/item1/tshirtWhite.jpg"-->
-                        <img class="itemImg" id="greenShirt" src="../../images/item1/tshirtGreen.jpg">
-                    </li>
-                    <li class="itemList">
-                        <!--<a href="../images/item1/tshirtWhite.jpg"-->
-                        <img class="itemImg" id="greyShirt" src="../../images/item1/tshirtGrey.jpg">
-                    </li>
-                    <li class="itemList">
-                        <!--<a href="../images/item1/tshirtWhite.jpg"-->
-                        <img class="itemImg" id="redShirt" src="../../images/item1/tshirtRed.jpg">
-                    </li>
-                </ul>
-            </div>
-        </li>
+                    <div class="list">
+                        <ul class="boxList">
+                            <li class="itemList">
+                                <a class="items" href="item1.html">
+                                    <img class="itemImg" id="itemDisplay1"
+                                         src="http://www.clipartkid.com/images/552/customer-feedback-for-this-store-17-past-orders-3-customer-ratings-kZzD4r-clipart.jpg">
+                                </a>
+                            </li>
+                            <li class="itemList">
+                                <a class="items" href="item2.html" >
+                                    <img class="itemImg" id="itemDisplay2" style="border-color: red"
+                                         src="../../images/item1/tshirtBlack.jpg">
+                                </a>
+                            </li>
+                            <li class="itemList">
+                                <a class="items" href="item3.html">
+                                    <img class="itemImg" id="itemDisplay3"
+                                         src="../../images/item1/tshirtBlue.jpg">
+                                </a>
+                            </li>
+                            <li class="itemList">
+                                <a class="items" href="item4.html">
+                                    <img class="itemImg" id="itemDisplay4"
+                                         src="../../images/item1/tshirtGreen.jpg">
+                                </a>
+                            </li>
+                            <li class="itemList">
+                                <a class="items" href="item5.html">
+                                    <img class="itemImg" id="itemDisplay5"
+                                         src="../../images/item1/tshirtGrey.jpg">
+                                </a>
+                            </li>
+                            <li class="itemList">
+                                <a class="items" href="item6.html">
+                                    <img class="itemImg" id="itemDisplay6"
+                                         src="../../images/item1/tshirtRed.jpg">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
 
         <li class="sizeList">
             <div class="sizeChoice">
@@ -72,7 +85,7 @@
             </div>
             <ul class="boxList">
                 <li>
-                    <a title="XXSmall" class="sizeSelection" id="xxs" onclick="sizeSelect(this.id)" href="item1.html">XXSmall</a>
+                    <a title="XXSmall" class="sizeSelection" id="xxs" onclick="sizeSelect(this.id)" >XXSmall</a>
                 </li>
                 <li>
                     <a title="XSmall" class="sizeSelection" id="xs" onclick="sizeSelect(this.id)">XSmall</a>
@@ -96,6 +109,17 @@
         </li>
     </ul>
 
-    <input id="btn" type="button" value= "BUY NOW" onclick="buyItem('images/item1/tshirtBlack.jpg')" />
+            <div id="btnContainer">
+                <p id="cost"> $10.00 </p>
+                <input id="btn" type="button" value= "BUY NOW"
+                       onclick="buyItem('images/item1/tshirtBlack.jpg', 'Plain Black Shirt')" />
+            </div>
+        </div>
+
+        <div class="descriptionContainer">
+            <h3 id="descriptionHeader"> Description</h3>
+            <p id="descriptionContent"> this is the details of a plain black shirt </p>
+        </div>
+    </div>
 </body>
 </html>
