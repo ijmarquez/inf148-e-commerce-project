@@ -1,0 +1,15 @@
+.about-contents {
+    top: 20%;
+    text-align: center;
+}
+
+.about-contents h1 {
+    font-family: cursive;
+}
+
+.about-description {
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+    width: 100%;
+}
