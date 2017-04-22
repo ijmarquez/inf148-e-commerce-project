@@ -1,6 +1,6 @@
 /* for the links */
 
-/*a:link {
+a:link {
     color: gray;
     background-color: white;
     text-decoration: none;
@@ -45,7 +45,7 @@ header {
 
 h1 {
     text-align: center;
-}*/
+}
 
 h2 {
     font-size: 50px;
