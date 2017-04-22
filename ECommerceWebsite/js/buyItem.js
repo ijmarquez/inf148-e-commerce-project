@@ -3,15 +3,20 @@
  */
 
 function getValues() {
+    var item = localStorage.getItem("item");
     var imgPick = localStorage.getItem("img");
     var sizePick = localStorage.getItem("size");
     var costPick = localStorage.getItem("cost");
 
-    var itemPicked = document.getElementById("showImg");
+    var itemPicked = document.getElementById("itemPicked");
+    var showImg = document.getElementById("showImg");
     var sizePicked = document.getElementById("sizePicked");
     var costPicked = document.getElementById("costPicked");
 
-    itemPicked.src=imgPick;
+    itemPicked.style.display = "block";
+    itemPicked.innerHTML = "Item Purchased: " + item;
+
+    showImg.src=imgPick;
 
     sizePicked.style.display = "block";
     sizePicked.innerHTML = "Size: " + sizePick;

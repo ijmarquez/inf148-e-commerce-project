@@ -54,10 +54,11 @@ function itemSelect(itemClick) {
     }
 }
 
-function buyItem(img) {
+function buyItem(img, shirt) {
     if(idPicked==undefined)
         alert("Pick a shirt size");
     else {
+        localStorage.setItem("item", shirt);
         localStorage.setItem("size", idPicked.title);
         localStorage.setItem("img", img);
         localStorage.setItem("cost", "$10");
