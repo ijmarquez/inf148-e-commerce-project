@@ -42,13 +42,13 @@ a:active {
     text-decoration: underline;
     padding-left: 1%;
 }
-
+*/
 .image_thumbnail {
     display: block;
 	height: auto;
 	width: 100%;
 }
-
+/*
 .image_large {
 	height: 400px;
 	width: 400px;
@@ -117,23 +117,26 @@ h1.main {
   text-align: center;
 }
 
-/*
+
 table, th, td, tr {
 	border: 2px solid black;
 	border-collapse: collapse;
 	margin-left: auto;
 	margin-right: auto;
 }
+
+
 table {
-    padding-left: 10px;
+    /*padding-left: 10px;
     padding-right: 10px;
-    padding: 5px;
+    padding: 5px;*/
     width: 100%;
     height: auto;
 }
 
+/*
 #pagetitle {
   font-family: 'Helvetica Neue',Sans-serif, monospace;
   font-size: 1em;
   text-align: center;  
-}*/
+}*?
