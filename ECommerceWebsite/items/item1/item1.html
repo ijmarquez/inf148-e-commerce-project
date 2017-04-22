@@ -8,12 +8,12 @@
     <title>Item 1</title>
 </head>
 
-<hr>
-<header>
-    <a class="userOption">SignIn</a>
-    <a class="userOption">My Orders</a>
-    <a class="userOption">Shipping/Returns</a>
-</header>
+<!--<hr>-->
+<!--<header>-->
+    <!--<a class="userOption">SignIn</a>-->
+    <!--<a class="userOption">My Orders</a>-->
+    <!--<a class="userOption">Shipping/Returns</a>-->
+<!--</header>-->
 
 <body>
     <hr>
@@ -39,14 +39,14 @@
                     <div class="list">
                         <ul class="boxList">
                             <li class="itemList">
-                                <a href="item1.html">
+                                <a class="items" href="item1.html">
                                 <img class="itemImg" id="whiteShirt" style="border-color: red"
                                      src="http://www.clipartkid.com/images/552/customer-feedback-for-this-store-17-past-orders-3-customer-ratings-kZzD4r-clipart.jpg">
                                 </a>
                             </li>
                             <li class="itemList">
                                 <!--<a href="../images/item1/tshirtWhite.jpg"-->
-                                <a href="item2.html">
+                                <a class="items" href="item2.html">
                                 <img class="itemImg" id="blackShirt" src="../../images/item1/tshirtBlack.jpg">
                                 </a>
                             </li>
@@ -101,7 +101,8 @@
     </ul>
 
             <div id="btnContainer">
-                <input id="btn" type="button" value= "BUY NOW" onclick="buyItem()" />
+                <p id="cost"> $10.00 </p>
+                <input id="btn" type="button" value= "BUY NOW" onclick="buyItem('http://www.clipartkid.com/images/552/customer-feedback-for-this-store-17-past-orders-3-customer-ratings-kZzD4r-clipart.jpg')" />
             </div>
         </div>
 
