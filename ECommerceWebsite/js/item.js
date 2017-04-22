@@ -58,10 +58,11 @@ function buyItem(img, shirt) {
     if(idPicked==undefined)
         alert("Pick a shirt size");
     else {
-        localStorage.setItem("item", shirt);
-        localStorage.setItem("size", idPicked.title);
-        localStorage.setItem("img", img);
-        localStorage.setItem("cost", "$10");
+        localStorage.setItem('item', shirt);
+        localStorage.setItem('size', idPicked.title);
+        localStorage.setItem('img', img);
+        localStorage.setItem('cost', "$10");
+        window.location.assign("../../buyItem.html");
         window.location.href = "../../buyItem.html";
     }
 

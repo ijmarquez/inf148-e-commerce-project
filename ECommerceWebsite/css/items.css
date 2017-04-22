@@ -31,9 +31,35 @@ a:active {
     text-decoration: none;
 }
 
+.userOption:link {
+    color: blue;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.userOption:visited {
+    color: Blue;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.userOption:hover {
+    /*color: gray;*/
+    background-color: yellow;
+    border-color: blue;
+    text-decoration: none;
+}
+
+.userOption:active {
+    color: blue;
+    background-color: transparent;
+    text-decoration: none;
+}
+
 .userOption {
     color: blue;
     text-decoration: underline;
+    font-size: 25px;
     padding-left: 1%;
 }
 
