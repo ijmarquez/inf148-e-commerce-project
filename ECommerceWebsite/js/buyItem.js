@@ -3,10 +3,10 @@
  */
 
 function getValues() {
-    var item = localStorage.getItem("item");
-    var imgPick = localStorage.getItem("img");
-    var sizePick = localStorage.getItem("size");
-    var costPick = localStorage.getItem("cost");
+    var item = localStorage.getItem('item');
+    var imgPick = localStorage.getItem('img');
+    var sizePick = localStorage.getItem('size');
+    var costPick = localStorage.getItem('cost');
 
     var itemPicked = document.getElementById("itemPicked");
     var showImg = document.getElementById("showImg");
