@@ -11,7 +11,7 @@ a:visited {
 	background-color: transparent;
 	text-decoration: none;
 }
-*/
+
 
 a:hover {
 	color: inherit;
@@ -19,13 +19,15 @@ a:hover {
 	text-decoration: none;	
 }
 
-/*
+
+
 a:active {
 	color: gray;
 	background-color: transparent;
 	text-decoration: none;	
 }*/
 
+/*
 .btn {
     background-color: lightslategray;
     color: #ffffff;
@@ -41,10 +43,6 @@ a:active {
     padding-left: 1%;
 }
 
-/*banner {*/
-  /*background: 'Color.Seagreen';*/
-/*}*/
-
 .image_thumbnail {
     display: block;
 	height: auto;
@@ -57,7 +55,7 @@ a:active {
 }
 
 h1 {
-    text-align: center;
+    color: white;
 }
 
 h3 {
@@ -79,29 +77,47 @@ h4 {
 }
 
 header {
-  /*background-color: #f2f2f2;*/
   font-family: 'Helvetica Neue',Sans-serif, monospace;
   font-size: 0.9em;
   text-align: right;
 }
+*/
 
-main {
-  background-color: powderblue;
+.container {
+    background-color: orange;
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    /*overflow: scroll;*/
 }
 
-footer {
+/*
+h1.main {
+    text-align: center;
+}*/
+
+/*
+.home {
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    top: 25%;
+}
+
+.main {
+  background-color: powderblue;
+    text-align: center;
+}
+*/
+
+.footer {
   background: pink;
   font-family: 'Helvetica Neue',Sans-serif, monospace;
   font-size: 0.75em;
   text-align: center;
 }
 
-.path {
-  font-family: 'Helvetica Neue',Sans-serif, monospace;
-  font-size: .9em; 	
-  text-decoration-color: lightgray;
-}
-
+/*
 table, th, td, tr {
 	border: 2px solid black;
 	border-collapse: collapse;
@@ -116,12 +132,8 @@ table {
     height: auto;
 }
 
-#description {
-
-}
-
 #pagetitle {
   font-family: 'Helvetica Neue',Sans-serif, monospace;
   font-size: 1em;
   text-align: center;  
-}
+}*/
