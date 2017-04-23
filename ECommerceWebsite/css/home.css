@@ -27,3 +27,10 @@
     margin-right: 100px;
     text-align: center;
 }
+
+.home-container {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    overflow: scroll;
+}

@@ -2,12 +2,55 @@
     background-color: cornflowerblue;
 }
 
+.item-container {
+
+}
+
 .item-logo {
     font-family: cursive;
-    font-size: 25px;
+    font-size: 18px;
     margin-left: 75px;
     margin-right: 75px;
     text-align: center;
+}
+
+
+.item-name {
+
+}
+
+li {
+    text-align: left;
+}
+
+.item-categories {
+
+}
+
+.item-colors {
+
+}
+
+.item-sizes {
+
+}
+
+.boxList {
+    display: block;
+    list-style: none;
+
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+
+.item-swatches {
+    width: 40px;
+    height: 40px;
+    border: 1px solid;
+    padding: 2px;
 }
 
 .item-contents {
@@ -16,6 +59,27 @@
     padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;
+}
+
+table, tr {
+    border: 0.5px solid lightslategray;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td {
+    border: 0.5px solid lightslategray;
+    border-collapse: collapse;
+    /*margin-left: auto;
+    margin-right: auto; */
+    padding: 5px;
+}
+
+.image_normal {
+    display: block;
+    height: 350px;
+    width: 350px;
 }
 
 .item-footer {

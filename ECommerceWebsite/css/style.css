@@ -54,8 +54,15 @@ td {
 
 .image_thumbnail {
     display: block;
-    height: 136px;
-    width: 136px;
+    height: 150px;
+    width: 150px;
+}
+
+.container {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    overflow: scroll;
 }
 
 /* for the links */
@@ -138,11 +145,3 @@ header {
   text-align: right;
 }
 */
-
-.container {
-    background-color: orange;
-    position: absolute;
-    min-height: 100%;
-    min-width: 100%;
-    /*overflow: scroll;*/
-}

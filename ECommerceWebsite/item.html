@@ -3,11 +3,10 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/item.css">
-    <title>Item</title>
-
-<!--<style type="text/css"></style>-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--<script src="js/item.js"></script>-->
+      <title>Item</title>
+      <script type="text/javascript">
     $(document).ready(function() {
         var pSrc = GetParamValue("Item_Color"); //"images/item1/tshirtBlack.jpg"; //Request.QueryString["Item_Color"];
         ShowItem(pSrc);
@@ -32,12 +31,12 @@
         return retval;
     }
 
-    function ShowItem(aSrc)
+   function ShowItem(aSrc)
     {
         //$("#Item1_Red").removeClass("Hidden");
-        $("#ItemImage").attr("src", aSrc);
+        $("#itemImage").attr("src", aSrc);
     }
-</script>
+  </script>
   </head>
 
 <body>
@@ -46,22 +45,38 @@
       <h1>Clothing Couture</h1>
     </div>
     <hr>
+
     <div class="item-contents">
-      <table>
+      <table style="width: 100%">
         <tr>
-          <img id="ItemImage" src="">
+          <th rowspan="3">
+              <img id="itemImage" src="">
+          </th>
+          <td>
+              <p>Available Colors</p>
+              <ul>
+                  <li></li> <!-- this is where the item swatches go -->
+              </ul>
+          </td>
         </tr>
         <tr>
-
+          <td>
+              <p>Available Sizes</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+              <p>Description</p>
+          </td>
         </tr>
       </table>
     </div>
+    <hr>
+
     <div class="item-footer">
       <a href="about.html">about us</a>
       <a href="contact.html">contact us</a>
     </div>
   </div>
-    <!--<img id="ItemImage" src="">
-    <div id="MyStyle"></div>-->
 </body>
 </html>
