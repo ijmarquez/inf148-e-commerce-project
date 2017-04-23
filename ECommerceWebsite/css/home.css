@@ -1,0 +1,29 @@
+#home-background {
+    background-color: cornflowerblue;
+}
+
+.home-contents {
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.home-footer {
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+}
+
+#home-hook {
+    font-size: 20px;
+}
+
+.home-logo {
+    font-family: cursive;
+    font-size: 25px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+}

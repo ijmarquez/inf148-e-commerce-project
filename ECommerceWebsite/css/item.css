@@ -1,0 +1,25 @@
+#item-background {
+    background-color: cornflowerblue;
+}
+
+.item-logo {
+    font-family: cursive;
+    font-size: 25px;
+    margin-left: 75px;
+    margin-right: 75px;
+    text-align: center;
+}
+
+.item-contents {
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.item-footer {
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+}
