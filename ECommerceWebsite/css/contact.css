@@ -1,8 +1,8 @@
-#about-background {
+#contact-background {
     background-color: cornflowerblue;
 }
 
-.about-logo {
+.contact-logo {
     font-family: cursive;
     font-size: 25px;
     margin-left: 75px;
@@ -10,7 +10,7 @@
     text-align: center;
 }
 
-.about-contents {
+.contact-contents {
     margin-left: 100px;
     margin-right: 100px;
     padding-top: 50px;
@@ -18,7 +18,7 @@
     text-align: center;
 }
 
-.about-footer {
+.contact-footer {
     margin-left: 100px;
     margin-right: 100px;
     text-align: center;
