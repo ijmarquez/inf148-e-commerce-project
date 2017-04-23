@@ -1,3 +1,66 @@
+#items-background {
+    background-color: cornflowerblue;
+}
+
+.items-logo {
+    font-family: cursive;
+    font-size: 18px;
+    margin-left: 75px;
+    margin-right: 75px;
+    text-align: center;
+}
+
+
+.items-footer {
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+}
+
+.items-contents {
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+table, tr {
+    border: 0.5px solid lightslategray;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td {
+    border: 0.5px solid lightslategray;
+    border-collapse: collapse;
+    /*margin-left: auto;
+    margin-right: auto; */
+    padding: 5px;
+}
+
+.items-name {
+    font-size: 12px;
+    font-weight: normal;
+    text-decoration-color: slategray;
+    text-align: left;
+}
+
+.items-price {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.image_thumbnail {
+    display: block;
+    /*height: auto;
+    width: 100%;*/
+    height: 136px;
+    width: 136px;
+}
+
 /* for the links */
 /*
 a:link {
@@ -43,11 +106,7 @@ a:active {
     padding-left: 1%;
 }
 */
-.image_thumbnail {
-    display: block;
-	height: auto;
-	width: 100%;
-}
+
 /*
 .image_large {
 	height: 400px;
@@ -110,29 +169,27 @@ h1.main {
 }
 */
 
+/*
 .footer {
   background: pink;
   font-family: 'Helvetica Neue',Sans-serif, monospace;
   font-size: 0.75em;
   text-align: center;
-}
+}*/
 
 
-table, th, td, tr {
-	border: 2px solid black;
-	border-collapse: collapse;
-	margin-left: auto;
-	margin-right: auto;
-}
 
 
+
+
+/*
 table {
-    /*padding-left: 10px;
+    padding-left: 10px;
     padding-right: 10px;
-    padding: 5px;*/
+    padding: 5px;
     width: 100%;
     height: auto;
-}
+}*/
 
 /*
 #pagetitle {
