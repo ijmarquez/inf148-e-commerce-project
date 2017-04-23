@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US" id="item-background">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/item.css">
+    <title>Item</title>
+
+<!--<style type="text/css"></style>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        var pSrc = GetParamValue("Item_Color"); //"images/item1/tshirtBlack.jpg"; //Request.QueryString["Item_Color"];
+        ShowItem(pSrc);
+        $("div#MyStyle").html(GetParamValue("style"));
+    });
+
+    function GetParamValue(aParamName)
+    {
+        var param = location.search;     // ?param1=value1&param2=value2&param3=value3
+        param = param.replace('?', '');
+        var paramarr = param.split('&');  // paramarr[0] = "param1=value1"   paramarr[1] = "param2=value2" ...
+        var retval = "";
+        var paramKeyVal;
+        for (i=0; i<paramarr.length; i++)
+        {
+            paramKeyVal = paramarr[i].split('=');
+            if (paramKeyVal[0] == aParamName)
+            {
+                retval = paramKeyVal[1];
+            }
+        }
+        return retval;
+    }
+
+    function ShowItem(aSrc)
+    {
+        //$("#Item1_Red").removeClass("Hidden");
+        $("#ItemImage").attr("src", aSrc);
+    }
+</script>
+  </head>
+
+<body>
+  <div class="item-container">
+    <div class="item-logo">
+      <h1>Clothing Couture</h1>
+    </div>
+    <hr>
+    <div class="item-contents">
+      <table>
+        <tr>
+          <img id="ItemImage" src="">
+        </tr>
+        <tr>
+
+        </tr>
+      </table>
+    </div>
+    <div class="item-footer">
+      <a href="about.html">about us</a>
+      <a href="contact.html">contact us</a>
+    </div>
+  </div>
+    <!--<img id="ItemImage" src="">
+    <div id="MyStyle"></div>-->
+</body>
+</html>
