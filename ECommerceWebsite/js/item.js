@@ -2,31 +2,6 @@
  * Created by Calvin on 4/14/2017.
  */
 
-/*function ShowItem(aSrc)
-{
-    //$("#Item1_Red").removeClass("Hidden");
-    $("#itemImage").attr("src", aSrc);
-}
-
-function GetParamValue(aParamName)
-{
-    var param = location.search;     // ?param1=value1&param2=value2&param3=value3
-    param = param.replace('?', '');
-    var paramarr = param.split('&');  // paramarr[0] = "param1=value1"   paramarr[1] = "param2=value2" ...
-    var retval = "";
-    var paramKeyVal;
-    for (i=0; i<paramarr.length; i++)
-    {
-        paramKeyVal = paramarr[i].split('=');
-        if (paramKeyVal[0] == aParamName)
-        {
-            retval = paramKeyVal[1];
-        }
-    }
-    return retval;
-}*/
-
-
 var idPicked;
 
 function zoomIn() {

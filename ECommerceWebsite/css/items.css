@@ -21,13 +21,14 @@ a:visited {
 
 a:hover {
     /*color: gray;*/
-    background-color: grey;
+    /*background-color: grey;*/
     border-color: blue;
     text-decoration: none;
 }
 
 a:active {
     color: gray;
+    color: transparent;
     background-color: transparent;
     text-decoration: none;
 }
