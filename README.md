@@ -13,7 +13,7 @@ where the user can browse different kinds of shirts and blouses.
 To find out more about the company and how to contact us, go to the bottom of
 home.html to find the About Us and Contact Us pages.
 
-2, 3, 4. LIST OF PRODUCTS and IMAGES,
+2, 3, 4. LIST OF PRODUCTS and IMAGES
 From home.html, click 'Enter' to see the list of items that are for sale in items_list.html.
 
 5. CHOOSE A PRODUCT
