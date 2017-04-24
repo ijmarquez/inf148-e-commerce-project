@@ -1,3 +1,7 @@
+body {
+    background-color: cornflowerblue;
+}
+
 #showImg {
     width: 250px;
     height: 300px;

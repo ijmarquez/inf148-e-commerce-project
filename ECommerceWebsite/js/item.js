@@ -36,9 +36,15 @@ function sizeSelect(sizeClick) {
     for(i = 0; i < 7;++i)
     {
         if(sizeID[i] == idPicked)
+        {
             id.style.borderColor="red";
+            id.style.backgroundColor="yellow";
+        }
         else
+        {
             sizeID[i].style.borderColor="black";
+            sizeID[i].style.backgroundColor="#63e9ff";
+        }
     }
 }
 

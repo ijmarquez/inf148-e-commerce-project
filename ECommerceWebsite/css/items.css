@@ -1,7 +1,12 @@
+body {
+    background-color: cornflowerblue;
+}
+
+
 /* for the links */
 a:link {
     color: gray;
-    background-color: white;
+    background-color: transparent;
     text-decoration: none;
 }
 
@@ -13,8 +18,8 @@ a:visited {
 
 a:hover {
     /*color: gray;*/
-    /*background-color: grey;*/
-    border-color: blue;
+    background-color: grey;
+    border-color: magenta;
     text-decoration: none;
 }
 
@@ -24,11 +29,28 @@ a:active {
     background-color: transparent;
     text-decoration: none;
 }
+.items {
+    display: inline-block;
+    margin: 5px;
+
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
 
 .items:hover {
     background-color: transparent;
-    border-color: blue;
+    border-color: Blue;
     text-decoration: none;
+    position: relative;
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+    z-index: 1000;
 }
 
 .userOption:link {
@@ -80,8 +102,17 @@ h2 {
 
 
 #imgZoom {
+    padding: 2% 0 0 2%;
     width: 250px;
     height: 300px;
+}
+
+#overlay {
+    width:250px;
+    height: 300px;
+    /*background-image: url("../images/item1/tshirtWhite.jpg");*/
+    background-repeat: no-repeat;
+    display: inline-block;
 }
 
 .boxList {
@@ -103,6 +134,7 @@ h2 {
 .sizeSelection{
     border: 1px solid;
     padding: 2px;
+    background-color: #63e9ff;
 }
 
 .itemImg {
@@ -117,14 +149,6 @@ h2 {
 
 .itemCategories li {
     display: inline-block;
-}
-
-#overlay {
-    width:250px;
-    height: 300px;
-    /*background-image: url("../images/item1/tshirtWhite.jpg");*/
-    background-repeat: no-repeat;
-    /*display: inline-block;*/
 }
 
 .descriptionContainer {
@@ -142,6 +166,7 @@ h2 {
 
 #btnContainer {
     padding-bottom: 2%;
+    text-align: center;
 }
 
 #cost {
@@ -150,6 +175,7 @@ h2 {
 }
 
 #btn {
+    background-color: chocolate;
     width: 100px;
     height: 50px;
 }
@@ -172,6 +198,9 @@ h2 {
     text-indent: 20px;
 }
 
+.productContainer {
+    text-align: left;
+}
 
 
 
