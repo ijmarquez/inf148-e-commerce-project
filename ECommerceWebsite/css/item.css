@@ -2,13 +2,22 @@
     background-color: cornflowerblue;
 }
 
-.item-container {
+.item-navigation {
+    margin-left: 75px;
+    margin-right: 75px;
+    text-align: right;
+}
 
+.item-container {   /*From calvin's pageContainer in items.css*/
+    width: 1000px;
+    length: auto;
+    text-align: center;
+    border: 1px solid black;
 }
 
 .item-logo {
     font-family: cursive;
-    font-size: 18px;
+    font-size: 24px;
     margin-left: 75px;
     margin-right: 75px;
     text-align: center;
@@ -16,7 +25,11 @@
 
 
 .item-name {
-
+    border-bottom: 1px solid black; /*From calvin's pageContainer in items.css*/
+    font-size: 18px;
+    margin-left: 75px;
+    margin-right: 75px;
+    text-align: center;
 }
 
 li {
@@ -85,5 +98,6 @@ td {
 .item-footer {
     margin-left: 100px;
     margin-right: 100px;
+    margin-bottom: 20px;
     text-align: center;
 }
