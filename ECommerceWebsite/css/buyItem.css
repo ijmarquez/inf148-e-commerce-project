@@ -2,6 +2,9 @@ body {
     background-color: cornflowerblue;
 }
 
+h1 {
+    text-align: center;
+}
 #showImg {
     width: 250px;
     height: 300px;
@@ -37,4 +40,9 @@ table {
 #submitbtn {
     width: 110px;
     height: 40px
+}
+
+#totalCost {
+    font-weight: bold;
+    font-size: larger;
 }

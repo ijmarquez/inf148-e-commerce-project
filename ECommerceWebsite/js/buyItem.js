@@ -2,6 +2,7 @@
  * Created by Calvin on 4/20/2017.
  */
 
+
 function getValues() {
     var item = localStorage.getItem('item');
     var imgPick = localStorage.getItem('img');
@@ -13,6 +14,7 @@ function getValues() {
     var sizePicked = document.getElementById("sizePicked");
     var costPicked = document.getElementById("costPicked");
 
+
     itemPicked.style.display = "block";
     itemPicked.innerHTML = "Item Purchased: " + item;
 
@@ -23,6 +25,17 @@ function getValues() {
 
     costPicked.style.display = "block";
     costPicked.innerHTML = "Cost: " + costPick;
+}
+
+function updateTotal() {
+   var a = Number(document.getElementById("quantity").value);
+   var b = 10.00;
+   var c = a * b;
+   var total = c.toFixed(2);
+
+   var totalCost = document.getElementById("totalCost");
+   totalCost.style.display="block";
+   totalCost.innerHTML = "Total: $" + total;
 }
 
 function checkForm() {
@@ -50,7 +63,10 @@ function checkForm() {
         alert("Quantity must be at least 1");
         return(false);
     }
-
+    else if(!quantityField.value.match(/^[0-9]+$/)) {
+        alert("Quantity must be numbers");
+        return(false);
+    }
     //check first name (done)
     else if(firstNameField.value=="") {
         alert("First name cannot be blank");

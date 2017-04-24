@@ -6,6 +6,10 @@
     <script type="text/javascript" src="js/buyItem.js"></script>
     <title>Buy item</title>
 </head>
+
+<header>
+    <h1> Check Out</h1>
+</header>
 <body onload="getValues()">
     <div class="pageContainer">
         <div class="itemSelected">
@@ -15,13 +19,17 @@
 
             <p id="sizePicked"> </p>
             <p id="costPicked"> </p>
+            <!--<p id="totalCost" > Total: $10.00</p>-->
 
 
         <div class="form">
             <form method="post" action="mailto:panteater@uci.edu?subject=Order Place"&body="" name="userInfo" onsubmit="checkForm()">
                 <label for="mail">
                     Quantity:
-                    <input type="number" name="quantity" size="3"> <br>
+                    <input id="quantity" type="text" name="quantity" size="3" value=1 onkeyup="updateTotal()"> <br>
+                    <p input id="totalCost"> Total: $10.00</p>
+                    <!--<input id="totalCost" type="text" name="total" readonly> </input>-->
+
                     <table>
                         <h2 class="formSep">Personal Information</h2>
                         <tr>
