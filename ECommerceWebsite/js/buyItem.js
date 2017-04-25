@@ -198,5 +198,30 @@ function checkForm() {
         alert("Invalid Shipping Zip Code")
         return false;
     }
+    sendEmail()
     return true;
+}
+
+function sendEmail(check) {
+    if(!check){ return; }
+
+    var itemPicked = document.getElementById(itemPicked).value;
+    var sizePicked = document.getElementById(sizePicked).value;
+    var quantity = document.getElementById(quantity).value;
+    var totalCost = document.getElementById(totalCost).value;
+
+    var firstName = document.getElementsByName(firstName);
+    var lastName = document.getElementsByName(lastName);
+    var email = document.getElementsByName(emailA);
+
+    var body = "Order Invoice\n" +
+        itemPicked + "\n" +
+        sizePicked + "\n" +
+        quantity + "\n" +
+        totalCost + "\n" +
+        firstName + " " + lastName + "\n" +
+        email;
+
+
+    window.location.href = "mailto:panteater@uci.edu?subject=Order Place&body="+body;
 }
