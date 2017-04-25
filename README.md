@@ -3,7 +3,7 @@
 SYNOPSIS
 This is a website that sells t-shirts and blouses of different colors and sizes.
 
-Website URL:
+Website URL: http://andromeda-64.ics.uci.edu:5064/home.html
 
 LAYOUT
 From home.html, click 'Enter' to enter the store. The next page is items_list.html
@@ -41,8 +41,6 @@ There are at least 10 CSS properties located in the files located inside css fol
 This is implemented on each item's html page.
 
 
-Contributors:
-Irish Marquez
-Calvin Poon
+Contributors: Irish Marquez and Calvin Poon
 
 
