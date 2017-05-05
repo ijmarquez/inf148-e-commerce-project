@@ -222,6 +222,5 @@ function sendEmail(check) {
         firstName + " " + lastName + "\n" +
         email;
 
-
     window.location.href = "mailto:panteater@uci.edu?subject=Order Place&body="+body;
 }
