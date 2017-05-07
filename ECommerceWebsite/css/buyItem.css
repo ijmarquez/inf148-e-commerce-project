@@ -16,7 +16,7 @@ h1 {
 }
 
 .itemSelected{
-    border-bottom: 1px solid black;
+    /*border-bottom: 1px solid black;*/
 }
 
 .form {
@@ -45,4 +45,12 @@ table {
 #totalCost {
     font-weight: bold;
     font-size: larger;
+}
+
+.costContainer {
+    border-top: 1px solid black;
+}
+
+.buyItemTableContainer {
+    border: none;
 }

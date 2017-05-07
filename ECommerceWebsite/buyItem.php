@@ -12,24 +12,12 @@
                            <p>Item Purchase: <input id="itemPicked" name="itemPurchase" readonly> </input></p>
                         </div>
                         <img id="showImg">
-                    </div>
-                    <div>
-                        <p>Size: <input id="sizePicked" name="itemSize" readonly> </input> </p>
-                    </div>
-                    <div>
-                        <p>Cost: $<input id="costPicked" name="unitPrice" readonly> </input></p>
+                        <div>
+                            <p>Size: <input id="sizePicked" name="itemSize" readonly> </input> </p>
+                        </div>
                     </div>
 
-                    Quantity:
-                    <input id="quantity" type="text" name="quantity" size="3" value=1 onkeyup="updateTotal()"> <br>
-                    <div>
-                        <p>Tax: $ <input id="taxPicked" name="tax" value="0.15" readonly> </input></p>
-                    </div>
-                    <div>
-                        <p>Total: $ <input input id="totalCost" name="total" value="10.00" readonly> </input></p>
-                    </div>
-
-                    <table>
+                    <table class="buyItemTableContainer">
                         <h2 class="formSep">Personal Information</h2>
                         <tr>
                             <td>First Name:</td>
@@ -52,7 +40,7 @@
                     </table>
 
 
-                    <table>
+                    <table class="buyItemTableContainer">
                         <h2 class="formSep">Billing Information</h2>
                         <tr>
                             <td>Credit Card Type:</td>
@@ -91,7 +79,7 @@
                         </tr>
                     </table>
 
-                    <table>
+                    <table class="buyItemTableContainer">
                         <h2 class="formSep"> Shipping Information</h2>
                         <tr>
                             <td>Shipping Address: </td>
@@ -112,18 +100,33 @@
                         <tr>
                             <td>Delivery Option: </td>
                             <td>
-                                <select name="deliveryType">
-                                    <option value="Overnight">Overnight.....$10</option>
-                                    <option value="2Days">    2 Days.........$5</option>
-                                    <option value="7_10Days"> 7-10 Days......$3</option>
+                                <select id="deliveryType" name="deliveryType" onchange="updateTotal()">
+                                    <option value="Overnight" selected="selected">Overnight.....$10</option>
+                                    <option value="2 Days" >    2 Days.........$5</option>
+                                    <option value="7-10Days" > 7-10 Days......$3</option>
                                 </select>
                             </td>
                         </tr>
                     </table>
                 </label>
 
-                <div id="submitOrder">
-                    <input id="submitbtn" type="submit" value="Submit Order" onclick="return checkForm(); return false">
+                <div class="costContainer">
+                    <h2 class="formSep">Overview</h2>
+                    <div>
+                        <p>Cost: $<input id="costPicked" name="unitPrice" readonly> </input></p>
+                    </div>
+                    Quantity:
+                    <input id="quantity" type="text" name="quantity" size="3" value=1 onkeyup="updateTotal()"> <br>
+                    <div>
+                        <p>Tax: $ <input id="taxPicked" name="tax" value="0.15" onkeyup="updateTotal()" readonly> </input></p>
+                    </div>
+                    <div>
+                        <p>Total: $ <input input id="totalCost" name="total" value="10.00" readonly> </input></p>
+                    </div>
+
+                    <div id="submitOrder">
+                        <input id="submitbtn" type="submit" value="Submit Order" onclick="return checkForm(); return false">
+                    </div>
                 </div>
             </form>
         </div>

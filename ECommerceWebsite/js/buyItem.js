@@ -28,25 +28,46 @@ function getValues() {
     // costPick = parseFloat(costPick);
     // costPick.toFixed(2);
     costPicked.value = costPick;
+    updateTotal();
 }
 
 function updateTotal() {
-   var a = Number(document.getElementById("quantity").value);
-   var b = 10.00;
-   a.toFixed(2);
-   b.toFixed(2);
-   var c = a * b;
-   c=parseFloat(c);
-   var tax = document.getElementById("taxPicked").value;
-   tax =parseFloat(tax);
-   // tax.toFixed(2);
-   c = (c + tax);
-   var total = c;
+    //quantity
+    var a = Number(document.getElementById("quantity").value);
+    var b = 10.00;
+    a.toFixed(2);
+    b.toFixed(2);
+    var c = a * b;
+    c=parseFloat(c);
 
-   var totalCost = document.getElementById("totalCost");
+    //tax
+    var tax = document.getElementById("taxPicked").value;
+    tax =parseFloat(tax);
+    // tax.toFixed(2);
+    c = (c + tax);
+    var total = c;
 
-   // totalCost.style.display="block";
-   totalCost.value = total;
+    //delivery
+    var delivery = document.getElementById("deliveryType");
+    var deliveryType = delivery.options[delivery.selectedIndex].value;
+
+    if(deliveryType=="Overnight")
+    {
+        total+=10;
+    }
+    else if(deliveryType=="2 Days")
+    {
+        total+=5;
+    }
+    else
+    {
+        total+=3;
+    }
+
+    //update total cost
+    var totalCost = document.getElementById("totalCost");
+    // totalCost.style.display="block";
+    totalCost.value = total;
 }
 
 function checkForm() {
