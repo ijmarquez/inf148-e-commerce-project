@@ -4,23 +4,30 @@
 </header>
 <body onload="getValues()">
     <div class="pageContainer">
-        <div class="itemSelected">
-            <p id="itemPicked" >Item Purchase: </p>
-            <img id="showImg">
-        </div>
-
-            <p id="sizePicked"> </p>
-            <p id="costPicked"> </p>
-            <!--<p id="totalCost" > Total: $10.00</p>-->
-
-
         <div class="form">
             <form method="post" action="index.php?page=insertCustomerInfo" name="userInfo" onsubmit="checkForm()">
                 <label for="mail">
+                    <div class="itemSelected">
+                        <div>
+                           <p>Item Purchase: <input id="itemPicked" name="itemPurchase" readonly> </input></p>
+                        </div>
+                        <img id="showImg">
+                    </div>
+                    <div>
+                        <p>Size: <input id="sizePicked" name="itemSize" readonly> </input> </p>
+                    </div>
+                    <div>
+                        <p>Cost: $<input id="costPicked" name="unitPrice" readonly> </input></p>
+                    </div>
+
                     Quantity:
                     <input id="quantity" type="text" name="quantity" size="3" value=1 onkeyup="updateTotal()"> <br>
-                    <p input id="totalCost"> Total: $10.00</p>
-                    <!--<input id="totalCost" type="text" name="total" readonly> </input>-->
+                    <div>
+                        <p>Tax: $ <input id="taxPicked" name="tax" value="0.15" readonly> </input></p>
+                    </div>
+                    <div>
+                        <p>Total: $ <input input id="totalCost" name="total" value="10.00" readonly> </input></p>
+                    </div>
 
                     <table>
                         <h2 class="formSep">Personal Information</h2>

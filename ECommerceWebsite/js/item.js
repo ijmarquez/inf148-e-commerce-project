@@ -31,7 +31,7 @@ function buyItem(img, shirt) {
         localStorage.setItem('item', shirt);
         localStorage.setItem('size', idPicked.title);
         localStorage.setItem('img', img);
-        localStorage.setItem('cost', "$10");
+        localStorage.setItem('cost', "10");
         window.location.assign("buyItem.php");
         window.location.href = "index.php?page=buyItem";
     }

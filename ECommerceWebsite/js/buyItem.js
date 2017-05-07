@@ -15,27 +15,38 @@ function getValues() {
     var costPicked = document.getElementById("costPicked");
 
 
-    itemPicked.style.display = "block";
-    itemPicked.innerHTML = "Item Purchased: " + item;
+    // itemPicked.style.display = "block";
+    itemPicked.value = item;
 
     showImg.src=imgPick;
 
-    sizePicked.style.display = "block";
-    sizePicked.innerHTML = "Size: " + sizePick;
+    // sizePicked.style.display = "block";
+    sizePicked.value = sizePick;
 
-    costPicked.style.display = "block";
-    costPicked.innerHTML = "Cost: " + costPick;
+    // costPicked.style.display = "block";
+    // costPick = costPick.valueOf();
+    // costPick = parseFloat(costPick);
+    // costPick.toFixed(2);
+    costPicked.value = costPick;
 }
 
 function updateTotal() {
    var a = Number(document.getElementById("quantity").value);
    var b = 10.00;
+   a.toFixed(2);
+   b.toFixed(2);
    var c = a * b;
-   var total = c.toFixed(2);
+   c=parseFloat(c);
+   var tax = document.getElementById("taxPicked").value;
+   tax =parseFloat(tax);
+   // tax.toFixed(2);
+   c = (c + tax);
+   var total = c;
 
    var totalCost = document.getElementById("totalCost");
-   totalCost.style.display="block";
-   totalCost.innerHTML = "Total: $" + total;
+
+   // totalCost.style.display="block";
+   totalCost.value = total;
 }
 
 function checkForm() {
