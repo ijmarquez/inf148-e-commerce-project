@@ -152,7 +152,7 @@ h2 {
 }
 
 .descriptionContainer {
-    text-align: center;
+    text-align: left;
     border-top: 1px solid black;
 }
 
@@ -200,7 +200,16 @@ h2 {
 
 .productContainer {
     text-align: left;
+    width: 250px;
+    length: 300px;
 }
+
+#productContainerImg {
+    width: 250px;
+    length: 300px;
+}
+
+
 
 
 

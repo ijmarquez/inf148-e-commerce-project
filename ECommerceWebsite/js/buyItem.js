@@ -39,14 +39,13 @@ function updateTotal() {
 }
 
 function checkForm() {
-    var quantityField = document.userInfo.quantity;
     var firstNameField = document.userInfo.firstName;
     var lastNameField = document.userInfo.lastName;
     var emailAddress = document.userInfo.emailAddress;
     var phoneArea = document.userInfo.phoneArea;
     var phoneThree = document.userInfo.phoneThree;
     var phoneFour = document.userInfo.phoneFour;
-    var creditCard = document.userInfo.creditCard;
+    var creditCard = document.userInfo.creditCardNumber;
     var ccExpire = document.userInfo.ccExpire;
     var billAddress = document.userInfo.billAddress;
     var billCity = document.userInfo.billCity;
@@ -56,6 +55,7 @@ function checkForm() {
     var shipCity = document.userInfo.shipCity;
     var shipState = document.userInfo.shipState;
     var shipZipCode = document.userInfo.shipZipCode;
+    var quantityField = document.userInfo.quantity;
     var val=ccExpire.value.split("/");
 
     //check quantity cannot be 0 (Done)
