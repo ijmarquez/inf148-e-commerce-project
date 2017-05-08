@@ -247,11 +247,11 @@ function sendEmail(check) {
     window.location.href = "mailto:panteater@uci.edu?subject=Order Place&body="+body;
 }
 
-function getPlace(zip) {
-    var xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function () {
-
-    }
-    xhr.open("GET", "buyItem.php?zip=" + zip, true);
-    xhr.send();
-}
+// function getPlace(zip) {
+//     var xhr = new XMLHttpRequest();
+//     xhr.onreadystatechange = function () {
+//
+//     }
+//     xhr.open("GET", "buyItem.php?zip=" + zip, true);
+//     xhr.send();
+// }

@@ -72,7 +72,7 @@
                 <tr>
                     <td>Zip Code: </td>
                     <td> <input type="text" name="billZipCode"
-                                onblur="getPlace(this.value"> </td>
+                                > </td>
                 </tr>
             </table>
 
