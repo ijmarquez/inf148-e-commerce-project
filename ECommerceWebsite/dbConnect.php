@@ -1,13 +1,10 @@
 <?php
-//include $_SERVER['DOCUMENT_ROOT'].'/../dbconfig.php';
-//    $hostname = DB_HOST;
-//    $username = DB_USER;
-//    $password = DB_PASSWORD;
-//    $dbname = DB_DATABASE;
-$servername = "sylvester-mccoy-v3.ics.uci.edu";
-$username = "inf124-db-063";
-$password = "GSaxgpMPZKhN";
-$dbname = "inf124-db-063";
+include $_SERVER['DOCUMENT_ROOT'].'/dbconfig.php';
+    $servername = DB_HOST;
+    $username = DB_USER;
+    $password = DB_PASSWORD;
+    $dbname = DB_DATABASE;
+
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
 
