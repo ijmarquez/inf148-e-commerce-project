@@ -1,32 +1,13 @@
-#home-background {
-    background-color: cornflowerblue;
-}
-
 .home-contents {
-    margin-left: 100px;
-    margin-right: 100px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    text-align: center;
-}
-
-.home-footer {
-    margin-left: 100px;
-    margin-right: 100px;
-    text-align: center;
-    color: black;
-}
+     margin-left: 100px;
+     margin-right: 100px;
+     padding-bottom: 50px;
+     text-align: center;
+ }
 
 #home-hook {
-    font-size: 20px;
-}
-
-.home-logo {
-    font-family: cursive;
-    font-size: 25px;
-    margin-left: 100px;
-    margin-right: 100px;
-    text-align: center;
+    color: black;
+    font-size: 60px;
 }
 
 .home-container {
@@ -34,4 +15,13 @@
     min-height: 100%;
     min-width: 100%;
     overflow: scroll;
+}
+
+#userHomeItemList {
+    font-family: 'Helvetica Neue', Sans-serif;
+    font-size: 50px;
+}
+
+#userHomeItemList:visited {
+    color: darkred;
 }

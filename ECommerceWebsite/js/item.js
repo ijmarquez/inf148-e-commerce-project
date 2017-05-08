@@ -19,7 +19,7 @@ function sizeSelect(sizeClick) {
         else
         {
             sizeID[i].style.borderColor="black";
-            sizeID[i].style.backgroundColor="#63e9ff";
+            sizeID[i].style.backgroundColor="#b0e5f4";
         }
     }
 }

@@ -1,8 +1,9 @@
-</body>
-<footer>
-    <div class="home-footer">
-        <a class="userOption" href="about.php">about us</a>
-        <a class="userOption" href="contact.php">contact us</a>
+        <footer>
+            <div class="footer">
+                <a class="footerOption" href="about.php">about us</a>
+                <a class="footerOption" href="contact.php">contact us</a>
+            </div>
+        </footer>
     </div>
-</footer>
+</body>
 </html>

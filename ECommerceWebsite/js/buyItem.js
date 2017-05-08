@@ -1,8 +1,3 @@
-/**
- * Created by Calvin on 4/20/2017.
- */
-
-
 function getValues() {
     var item = localStorage.getItem('item');
     var imgPick = localStorage.getItem('img');
@@ -14,19 +9,14 @@ function getValues() {
     var sizePicked = document.getElementById("sizePicked");
     var costPicked = document.getElementById("costPicked");
 
-
-    // itemPicked.style.display = "block";
     itemPicked.value = item;
+    itemPicked.size = item.length;
 
     showImg.src=imgPick;
 
-    // sizePicked.style.display = "block";
     sizePicked.value = sizePick;
+    sizePicked.size = sizePick.length;
 
-    // costPicked.style.display = "block";
-    // costPick = costPick.valueOf();
-    // costPick = parseFloat(costPick);
-    // costPick.toFixed(2);
     costPicked.value = costPick;
     updateTotal();
 }

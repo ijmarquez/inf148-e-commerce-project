@@ -1,34 +1,25 @@
-body {
-    background-color: cornflowerblue;
+/*Title and image */
+.itemName h2 {
+    margin-top: 3px;
+    font-size: 50px;
+    font-weight: bold;
+    padding-bottom: 6px;
 }
 
-
-/* for the links */
-a:link {
-    color: gray;
-    background-color: transparent;
-    text-decoration: none;
+.productContainer {
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    length: 300px;
+    padding-bottom: 20px;
 }
 
-a:visited {
-    color: gray;
-    background-color: transparent;
-    text-decoration: none;
+#productContainerImg {
+    width: 250px;
+    length: 300px;
 }
 
-a:hover {
-    /*color: gray;*/
-    background-color: grey;
-    border-color: magenta;
-    text-decoration: none;
-}
-
-a:active {
-    color: gray;
-    color: transparent;
-    background-color: transparent;
-    text-decoration: none;
-}
+/*change view section*/
 .items {
     display: inline-block;
     margin: 5px;
@@ -40,10 +31,9 @@ a:active {
     transition: all 1s ease-in-out;
 }
 
-
 .items:hover {
     background-color: transparent;
-    border-color: Blue;
+    border-color: bisque;
     text-decoration: none;
     position: relative;
     -webkit-transform: scale(1.5);
@@ -51,68 +41,6 @@ a:active {
     -o-transform: scale(1.5);
     transform: scale(1.5);
     z-index: 1000;
-}
-
-.userOption:link {
-    color: blue;
-    background-color: transparent;
-    text-decoration: underline;
-}
-
-.userOption:visited {
-    color: Blue;
-    background-color: transparent;
-    text-decoration: none;
-}
-
-.userOption:hover {
-    /*color: gray;*/
-    background-color: yellow;
-    border-color: blue;
-    text-decoration: none;
-}
-
-.userOption:active {
-    color: blue;
-    background-color: transparent;
-    text-decoration: none;
-}
-
-.userOption {
-    color: blue;
-    text-decoration: underline;
-    font-size: 25px;
-    padding-left: 1%;
-}
-
-header {
-    font-family: 'Helvetica Neue',Sans-serif;
-    font-size: 0.9em;
-    text-align: right;
-}
-
-h1 {
-    text-align: center;
-}
-
-h2 {
-    font-size: 50px;
-    font-weight: bold;
-}
-
-
-#imgZoom {
-    padding: 2% 0 0 2%;
-    width: 250px;
-    height: 300px;
-}
-
-#overlay {
-    width:250px;
-    height: 300px;
-    /*background-image: url("../images/item1/tshirtWhite.jpg");*/
-    background-repeat: no-repeat;
-    display: inline-block;
 }
 
 .boxList {
@@ -131,10 +59,11 @@ h2 {
     display: block;
     margin: 0 12px 0 0;
 }
+
 .sizeSelection{
     border: 1px solid;
     padding: 2px;
-    background-color: #63e9ff;
+    background-color: #b0e5f4;
 }
 
 .itemImg {
@@ -156,14 +85,6 @@ h2 {
     border-top: 1px solid black;
 }
 
-.pageContainer {
-    width: 1000px;
-    length: auto;
-    text-align: center;
-    border: 1px solid black;
-    display: inline-block;
-}
-
 #btnContainer {
     padding-bottom: 2%;
     text-align: center;
@@ -175,9 +96,10 @@ h2 {
 }
 
 #btn {
-    background-color: chocolate;
+    background-color: #757575;
     width: 100px;
     height: 50px;
+    color: darkred;
 }
 .productList {
     border-right: 1px solid black;
@@ -188,26 +110,22 @@ h2 {
     border-bottom: 1px solid black;
 }
 
-.itemName{
-    border-bottom: 1px solid black;
-}
-
-#descriptionContent {
+/*description section*/
+.descriptionContainer {
     text-align: left;
     padding-left: 2%;
     text-indent: 20px;
+    font-family: 'Helvetica Neue', Sans-serif;
+
 }
 
-.productContainer {
-    text-align: left;
-    width: 250px;
-    length: 300px;
+.descriptionContainer h3 {
+    font-family: 'Helvetica Neue', Sans-serif;
+    font-size: 20px;
 }
 
-#productContainerImg {
-    width: 250px;
-    length: 300px;
-}
+
+
 
 
 

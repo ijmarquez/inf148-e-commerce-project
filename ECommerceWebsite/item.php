@@ -1,8 +1,5 @@
 <?php include('header.php'); ?>
 
-<!--set main item here-->
-<div class="pageContainer">
-
     <div class="itemName">
     <?php
         require_once ('dbConnect.php');
@@ -105,7 +102,6 @@
             echo('</p>');
         ?>
     </div>
-</div>
 
 <?php include('dbClose.php');;?>
 <?php include('footer.php'); ?>
