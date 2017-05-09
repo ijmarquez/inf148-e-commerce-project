@@ -34,7 +34,7 @@ function updateTotal() {
     tax = c * tax;
     tax = parseFloat(tax);
     tax = tax.toFixed(2);
-    document.getElementById("totalTax").value = tax;
+    document.getElementById("taxTotal").value = tax;
     c += parseFloat(tax);
 
     var total = 0;

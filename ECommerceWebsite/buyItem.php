@@ -120,7 +120,7 @@
                 Quantity:
                 <input id="quantity" type="text" name="quantity" size="3" value=1 onkeyup="updateTotal()"> <br>
                 <p>Tax rate: $ <input id="taxPicked" name="tax" value="0" onkeyup="updateTotal()" class="inputReadOnly" readonly> </input></p>
-                <p>Total Tax: $<input id="totalTax" class="inputReadOnly" value="0" readonly> </input></p>
+                <p>Total Tax: $<input id="taxTotal" name= 'taxTotal' class="inputReadOnly" value="0" readonly> </input></p>
                 <p>Total: $ <input input id="totalCost" name="total" value="20.00" class="inputReadOnly" readonly> </input></p>
 
             </div>

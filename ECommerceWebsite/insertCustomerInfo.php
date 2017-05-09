@@ -29,14 +29,15 @@
         $quantity = $_POST['quantity'];
         $unitPrice = $_POST['unitPrice'];
         $tax = $_POST['tax'];
+        $taxTotal = $_POST['taxTotal'];
         $total = $_POST['total'];
 
         $sql = "INSERT INTO Customer (firstName, lastName, emailAddress, phoneNumber, ccType, creditCardNumber, ccExpire,
                  billAddress, billCity, billState, billZipCode, shipAddress, shipCity, shipState, shipZipCode, deliveryType,
-                 itemPurchase, itemSize, quantity, unitPrice, tax, total)
+                 itemPurchase, itemSize, quantity, unitPrice, tax, taxTotal, total)
                  VALUES (:firstName, :lastName, :emailAddress, :phoneNumber, :ccType, :creditCardNumber, :ccExpire,
                  :billAddress, :billCity, :billState, :billZipCode, :shipAddress, :shipCity, :shipState, :shipZipCode, 
-                 :deliveryType, :itemPurchase, :itemSize, :quantity, :unitPrice, :tax, :total)";
+                 :deliveryType, :itemPurchase, :itemSize, :quantity, :unitPrice, :tax, :taxTotal, :total)";
 
         $stmt = $conn->prepare($sql);
         $stmt->execute(array(
@@ -61,6 +62,7 @@
             ':quantity' => $_POST['quantity'],
             ':unitPrice' => $_POST['unitPrice'],
             ':tax' => $_POST['tax'],
+            ':taxTotal' => $_POST['taxTotal'],
             ':total' => $_POST['total'] ));
 
 
@@ -71,7 +73,8 @@
         echo('Size ordered: '.$itemSize.'<br>');
         echo('Cost per unit: $'.$unitPrice.'<br>');
         echo('Quantity ordered: '.$quantity.'<br>');
-        echo('Tax rate: '.$tax.'<br>');
+        echo('Tax rate: $'.$tax.'<br>');
+        echo('Tax Total: $'.$taxTotal.'<br>');
         echo('Total Cost: $'.$total.'</p>');
 
         //personal info
