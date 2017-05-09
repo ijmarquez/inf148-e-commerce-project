@@ -71,7 +71,7 @@
         echo('Size ordered: '.$itemSize.'<br>');
         echo('Cost per unit: $'.$unitPrice.'<br>');
         echo('Quantity ordered: '.$quantity.'<br>');
-        echo('Tax purchased: '.$tax.'<br>');
+        echo('Tax rate: '.$tax.'<br>');
         echo('Total Cost: $'.$total.'</p>');
 
         //personal info

@@ -1,7 +1,10 @@
+
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
 <body onload="getValues()">
 <div class="form">
     <form method="post" action="index.php?page=insertCustomerInfo" name="userInfo" onsubmit="checkForm()">
-        <label for="mail">
+<!--        <label for="mail">-->
             <div class="itemSelected">
                 <div>
                    <p>Item Purchase:</p>
@@ -63,16 +66,17 @@
                 </tr>
                 <tr>
                     <td>City: </td>
-                    <td> <input type="text" name="billCity"> </td>
+                    <td>
+                        <input type="text" name="billCity" id="billCity" class="city" onkeyup="getState(this.id)">
+                    </td>
                 </tr>
                 <tr>
                     <td>State: </td>
-                    <td> <input type="text" name="billState"> </td>
+                    <td> <input type="text" name="billState" id="billState"> </td>
                 </tr>
                 <tr>
                     <td>Zip Code: </td>
-                    <td> <input type="text" name="billZipCode"
-                                > </td>
+                    <td> <input type="text" name="billZipCode" onblur="getZip(this.value, billCity, billState)"> </td>
                 </tr>
             </table>
 
@@ -84,15 +88,17 @@
                 </tr>
                 <tr>
                     <td>City: </td>
-                    <td> <input type="text" name="shipCity"> </td>
+                    <td>
+                        <input type="text" name="shipCity" id="shipCity" class="city" onkeyup="getState(this.id)">
+                    </td>
                 </tr>
                 <tr>
                     <td>State: </td>
-                    <td> <input type="text" name="shipState"> </td>
+                    <td> <input type="text" name="shipState" id="shipState"> </td>
                 </tr>
                 <tr>
                     <td>Zip Code: </td>
-                    <td> <input type="text" name="shipZipCode"> </td>
+                    <td> <input type="text" name="shipZipCode" onblur="getZip(this.value, shipCity, shipState)"> </td>
                 </tr>
                 <tr>
                     <td>Delivery Option: </td>
@@ -105,7 +111,7 @@
                     </td>
                 </tr>
             </table>
-        </label>
+<!--        </label>-->
 
         <div class="costContainer">
             <h2 class="formSep">Overview</h2>
@@ -113,7 +119,7 @@
                 <p>Cost: $<input id="costPicked" name="unitPrice" class="inputReadOnly" readonly> </input></p>
                 Quantity:
                 <input id="quantity" type="text" name="quantity" size="3" value=1 onkeyup="updateTotal()"> <br>
-                <p>Tax: $ <input id="taxPicked" name="tax" value="0.15" onkeyup="updateTotal()" class="inputReadOnly" readonly> </input></p>
+                <p>Tax: $ <input id="taxPicked" name="tax" value="0" onkeyup="updateTotal()" class="inputReadOnly" readonly> </input></p>
                 <p>Total: $ <input input id="totalCost" name="total" value="10.00" class="inputReadOnly" readonly> </input></p>
 
             </div>
@@ -123,3 +129,5 @@
         </div>
     </form>
 </div>
+
+

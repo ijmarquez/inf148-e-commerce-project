@@ -168,7 +168,7 @@ function checkForm() {
         alert("Billing Address city cannot be blank");
         return false;
     }
-    else if(!billCity.value.match(/^[a-zA-Z]+$/)) {
+    else if(!billCity.value.match(/^[a-zA-Z\s]+$/)) {
         alert("Invalid Billing City");
         return false;
     }
@@ -200,7 +200,7 @@ function checkForm() {
         alert("Shipping Address city cannot be blank");
         return false;
     }
-    else if(!shipCity.value.match(/^[a-zA-Z]+$/)) {
+    else if(!shipCity.value.match(/^[a-zA-Z\s]+$/)) {
         alert("Invalid Shipping City");
         return false;
     }
@@ -247,11 +247,31 @@ function sendEmail(check) {
     window.location.href = "mailto:panteater@uci.edu?subject=Order Place&body="+body;
 }
 
-// function getPlace(zip) {
-//     var xhr = new XMLHttpRequest();
-//     xhr.onreadystatechange = function () {
-//
-//     }
-//     xhr.open("GET", "buyItem.php?zip=" + zip, true);
-//     xhr.send();
-// }
+function getZip(zip , city, state) {
+    if(zip.length == 5) {
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4 && xhr.status == 200) {
+                var result = xhr.responseText;
+                var place = result.split(', ');
+                if(city.id == "billCity") {
+                    document.getElementById("taxPicked").value = place[0];
+                }
+                document.getElementById(state.id).value = place[1];
+                document.getElementById(city.id).value = place[2];
+
+            }
+        }
+        xhr.open("GET", "zipCode.php?zip=" + zip, true);
+        xhr.send();
+    }
+}
+
+function getState(state) {
+    $(function() {
+        $( "#"+state ).autocomplete({
+            source: 'fillAddress.php',
+            minlength: 1
+        });
+    });
+}
