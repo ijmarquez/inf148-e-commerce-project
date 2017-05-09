@@ -119,8 +119,9 @@
                 <p>Cost: $<input id="costPicked" name="unitPrice" class="inputReadOnly" readonly> </input></p>
                 Quantity:
                 <input id="quantity" type="text" name="quantity" size="3" value=1 onkeyup="updateTotal()"> <br>
-                <p>Tax: $ <input id="taxPicked" name="tax" value="0" onkeyup="updateTotal()" class="inputReadOnly" readonly> </input></p>
-                <p>Total: $ <input input id="totalCost" name="total" value="10.00" class="inputReadOnly" readonly> </input></p>
+                <p>Tax rate: $ <input id="taxPicked" name="tax" value="0" onkeyup="updateTotal()" class="inputReadOnly" readonly> </input></p>
+                <p>Total Tax: $<input id="totalTax" class="inputReadOnly" value="0" readonly> </input></p>
+                <p>Total: $ <input input id="totalCost" name="total" value="20.00" class="inputReadOnly" readonly> </input></p>
 
             </div>
             <div id="submitOrder">
