@@ -32,7 +32,11 @@
 
 .buyItemTableContainer {
     border: none;
-    padding-left: 2%;
+    padding-left: 15px;
+}
+
+.buyItemTableContainer td {
+    padding-left: 15px;
 }
 
 .inputReadOnly {
